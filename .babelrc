@@ -3,17 +3,6 @@
   "env": {
     "development": {
       "presets": ["react-hmre"]
-    },
-    "production": {
-      "plugins": [
-        [
-          "babel-plugin-webpack-loaders",
-          {
-            "config": "./webpack.config.dev.js",
-            "verbose": false,
-          }
-        ]
-      ]
     }
   }
 }
