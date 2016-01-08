@@ -1,6 +1,12 @@
 # React Transform Boilerplate
 
-[![react-transform channel on Discord](https://img.shields.io/badge/discord-react--transform%40reactiflux-61DAFB.svg?style=flat-square)](http://www.reactiflux.com)
+[![travis build](https://img.shields.io/travis/philholden/component-boilerplate.svg?style=flat-square)](https://travis-ci.org/philholden/component-boilerplate)
+[![codecov coverage](https://img.shields.io/codecov/c/github/philholden/component-boilerplate.svg?style=flat-square)](https://codecov.io/github/philholden/component-boilerplate)
+[![version](https://img.shields.io/npm/v/component-boilerplate.svg?style=flat-square)](http://npm.im/component-boilerplate)
+[![downloads](https://img.shields.io/npm/dm/component-boilerplate.svg?style=flat-square)](http://npm-stat.com/charts.html?package=component-boilerplate&from=2015-08-01)
+[![MIT License](https://img.shields.io/npm/l/component-boilerplate.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+
 
 :rocket: **Now  with [Babel 6](https://github.com/babel/babel) support** (thanks [@justingreenberg](https://github.com/justingreenberg))
 
