@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { NICE, SUPER_NICE } from './colors'
+import man from '../img/man.png'
 
 class Counter extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class Counter extends Component {
   }
 }
 
-const Hello = () => <div>Hello World</div>
+export const HelloWorld = () => <div>Hello World</div>
 
 export class App extends Component {
   render() {
@@ -35,7 +36,8 @@ export class App extends Component {
       <div>
         <Counter increment={1} color={NICE} />
         <Counter increment={5} color={SUPER_NICE} />
-        <Hello />
+        <HelloWorld />
+        <img src={man} />
       </div>
     )
   }
