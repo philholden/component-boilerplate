@@ -26,9 +26,15 @@ module.exports = {
     // })
   ],
   module: {
-    loaders: [ {
-      test: /\.png$/,
-      loader: 'url-loader?limit=100000'
-    } ]
+    loaders: [
+      {
+        test: /\.png$/,
+        loaders: [ 'url-loader?limit=100000' ]
+      },
+      {
+        test: /\.txt$/,
+        loaders: [ 'file-loader' ]
+      }
+    ]
   }
 }
