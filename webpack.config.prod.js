@@ -1,5 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
+var path = require('path')
+var webpack = require('webpack')
+
+console.log('HAPPY HAPPY --------------------------------------')
 
 module.exports = {
   devtool: 'source-map',
@@ -7,28 +9,28 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    libraryTarget: 'commonjs2',
+    path: path.join(__dirname, 'lib'),
+//    filename: 'bundle.js',
+    publicPath: '/lib/'
   },
   plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false
-      }
-    })
+    // new webpack.optimize.OccurenceOrderPlugin(),
+    // new webpack.DefinePlugin({
+    //   'process.env': {
+    //     'NODE_ENV': JSON.stringify('production')
+    //   }
+    // }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compressor: {
+    //     warnings: false
+    //   }
+    // })
   ],
   module: {
-    loaders: [{
-      test: /\.js$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'src')
-    }]
+    loaders: [ {
+      test: /\.png$/,
+      loader: 'url-loader?limit=100000'
+    } ]
   }
-};
+}
