@@ -1,5 +1,5 @@
 {
-  "name": "component-boilerplate",
+  "name": "@philholden/component-boilerplate",
   "version": "0.0.0-semantically-released",
   "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-transform-boilerplate.git"
+    "url": "https://github.com/philholden/component-boilerplate.git"
   },
   "keywords": [
     "react",
@@ -53,10 +53,10 @@
     "babel-preset-stage-2": "^6.3.13",
     "babel-register": "^6.3.13",
     "codecov.io": "0.1.6",
-    "commitizen": "1.0.5",
+    "commitizen": "^2.5.0",
     "compression": "^1.6.0",
     "cross-env": "^1.0.6",
-    "cz-conventional-changelog": "1.1.2",
+    "cz-conventional-changelog": "^1.1.5",
     "eslint": "^1.10.3",
     "eslint-config-rackt": "^1.1.1",
     "eslint-plugin-babel": "^3.0.0",
@@ -79,12 +79,12 @@
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
-  },
   "config": {
     "ghooks": {
       "pre-commit": "npm run test && npm run check-coverage"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
   },
   "dependencies": {
