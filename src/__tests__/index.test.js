@@ -30,6 +30,6 @@ test('MyComponent default render', () => {
     renderer.getRenderOutput()
   )
   .toEqualJSX(
-    <div>Hello World</div>
+    <div>Hello World.</div>
   )
 })
