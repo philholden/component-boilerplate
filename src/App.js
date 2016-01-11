@@ -28,7 +28,7 @@ class Counter extends Component {
   }
 }
 
-export const HelloWorld = () => <div>Hello World</div>
+export const HelloWorld = () => <div>Hello World.</div>
 
 export class App extends Component {
   render() {
