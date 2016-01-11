@@ -1,8 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
 
-console.log('HAPPY HAPPY --------------------------------------')
-
 module.exports = {
   devtool: 'source-map',
   entry: [
