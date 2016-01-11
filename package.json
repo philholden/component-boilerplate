@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build:babel": "NODE_ENV=production babel src --out-dir lib",
+    "build:babel": "NODE_ENV=lib babel src --out-dir lib",
     "build": "npm run clean && npm run build:babel",
     "start": "node devServer.js",
     "lint": "eslint src",
@@ -34,12 +34,12 @@
     "babel",
     "react-transform"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
-  "license": "CC0-1.0",
+  "author": "Phil Holden (http://github.com/philholden)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaearon/react-transform-boilerplate/issues"
+    "url": "https://github.com/philholden/component-boilerplate/issues"
   },
-  "homepage": "https://github.com/gaearon/react-transform-boilerplate",
+  "homepage": "https://github.com/philholden/component-boilerplate/issues",
   "devDependencies": {
     "ava": "^0.9.1",
     "babel-cli": "^6.4.0",

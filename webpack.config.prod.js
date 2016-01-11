@@ -1,5 +1,5 @@
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path') // eslint-disable-line no-var
+var webpack = require('webpack') // eslint-disable-line no-var
 
 module.exports = {
   devtool: 'source-map',
@@ -7,33 +7,33 @@ module.exports = {
     './src/index'
   ],
   output: {
-    libraryTarget: 'commonjs2',
-    path: path.join(__dirname, 'lib'),
-//    filename: 'bundle.js',
-    publicPath: '/lib/'
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPath: '/static/'
   },
   plugins: [
-    // new webpack.optimize.OccurenceOrderPlugin(),
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     'NODE_ENV': JSON.stringify('production')
-    //   }
-    // }),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compressor: {
-    //     warnings: false
-    //   }
-    // })
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false
+      }
+    })
   ],
   module: {
     loaders: [
       {
-        test: /\.png$/,
-        loaders: [ 'url-loader?limit=100000' ]
+        test: /\.js$/,
+        loaders: [ 'babel' ],
+        include: path.join(__dirname, 'src')
       },
       {
-        test: /\.txt$/,
-        loaders: [ 'file-loader' ]
+        test: /\.png$/,
+        loaders: [ 'url-loader?limit=7000' ]
       }
     ]
   }

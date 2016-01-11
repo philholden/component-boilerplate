@@ -1,5 +1,5 @@
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path') // eslint-disable-line no-var
+var webpack = require('webpack') // eslint-disable-line no-var
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',

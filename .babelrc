@@ -4,12 +4,12 @@
     "development": {
       "presets": ["react-hmre"]
     },
-    "production": {
+    "lib": {
       "plugins": [
         [
           "babel-plugin-webpack-loaders",
           {
-            "config": "./webpack.config.prod.js",
+            "config": "./webpack.config.lib.js",
             "verbose": false,
           }
         ]
