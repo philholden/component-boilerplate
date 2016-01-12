@@ -1,5 +1,5 @@
 {
-  "name": "vwxyzz-boilerplate",
+  "name": "vwxyz10000-boilerplate",
   "version":"0.0.1-semantic",
   "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
   "main": "lib/index.js",
@@ -16,7 +16,7 @@
     "test": "NODE_ENV=test ava src/**/*.test.js --require babel-register --require ./src/__tests__/null-compiler",
     "test:watch": "nodemon -w src --exec 'npm t -- --verbose'",
     "test:cover": "nyc --reporter=lcov --reporter=text npm t",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post"
   },
   "repository": {
     "type": "git",
