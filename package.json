@@ -86,10 +86,16 @@
     },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
+    },
+    "release": {
+      "debug": true
     }
   },
   "dependencies": {
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
+  },
+  "release": {
+    "debug": true
   }
 }
