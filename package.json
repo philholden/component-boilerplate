@@ -2,6 +2,7 @@
   "name": "@philholden/component-boilerplate",
   "version": "0.0.0-semantically-released",
   "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
+  "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -39,7 +40,7 @@
   "bugs": {
     "url": "https://github.com/philholden/component-boilerplate/issues"
   },
-  "homepage": "https://github.com/philholden/component-boilerplate/issues",
+  "homepage": "https://github.com/philholden/component-boilerplate/",
   "devDependencies": {
     "ava": "^0.9.1",
     "babel-cli": "^6.4.0",
