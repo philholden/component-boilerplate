@@ -1,5 +1,5 @@
 {
-  "name": "@philholden/component-boilerplate",
+  "name": "vwxyz-boilerplate",
   "version":"0.0.1-semantic",
   "description": "A new Webpack boilerplate with hot reloading React components, and error handling on module and component level.",
   "main": "lib/index.js",
