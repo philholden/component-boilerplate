@@ -36,7 +36,7 @@
     "react-transform"
   ],
   "author": "Phil Holden (http://github.com/philholden)",
-  "license": "MIT",
+  "license": "CC0",
   "bugs": {
     "url": "https://github.com/philholden/component-boilerplate/issues"
   },
