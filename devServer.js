@@ -4,6 +4,9 @@ var webpack = require('webpack')  // eslint-disable-line no-var
 var config = require('./webpack.config.dev') // eslint-disable-line no-var
 var compression = require('compression') // eslint-disable-line no-var
 
+// var requestProxy = require('express-request-proxy')
+// var objectAssign = require('object-assign')
+
 var app = express() // eslint-disable-line no-var
 var server = require('http').createServer(app) // eslint-disable-line no-var
 var io = require('socket.io')(server) // eslint-disable-line no-var
@@ -22,9 +25,20 @@ app.use(compression({
   threshold: 512
 }))
 
-app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'))
-})
+app.use('/', express.static('.'))
+
+// app.all('*', function(req, res, next) {
+//   var url = require('url').parse(req.url)
+//   var conf = objectAssign({}, req, {
+//     url: 'http://127.0.0.1:8888' + url.pathname,
+//     timeout: 120000
+//   })
+//   requestProxy(conf)(req, res, next)
+// })
+
+// app.get('*', function (req, res) {
+//   res.sendFile(path.join(__dirname, 'index.html'))
+// })
 
 server.listen(port, '0.0.0.0', function (err) {
   if (err) {
