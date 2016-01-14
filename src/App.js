@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import { NICE, SUPER_NICE } from './colors'
 import man from '../img/man.png'
 
-let a = 1
-
 class Counter extends Component {
   constructor(props) {
     super(props)
