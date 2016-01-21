@@ -7,6 +7,7 @@ class Counter extends Component {
     super(props)
     this.state = { counter: 0 }
     this.interval = setInterval(() => this.tick(), 1000)
+    
   }
 
   tick() {
